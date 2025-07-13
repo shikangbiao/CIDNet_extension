@@ -1,2 +1,1 @@
-# CIDNet_extension
-# The code will be released soon.
+# The official implementation of HVI-CIDNet+ will be open-sourced soon—stay tuned!

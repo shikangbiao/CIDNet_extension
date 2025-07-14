@@ -8,44 +8,6 @@
 
 Previous Version: [You Only Need One Color Space: An Efficient Network for Low-light Image Enhancement](https://arxiv.org/abs/2402.05809)
 
-<div align="center">
-
-[![arXiv](https://img.shields.io/badge/arXiv-Paper-red.svg)](https://arxiv.org/abs/2502.20272)
-[![Gradio Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Gradio%20-Spaces-violet)](https://huggingface.co/spaces/Fediory/HVI-CIDNet_Low-light-Image-Enhancement_)
-[![Hugging Face Paper](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Paper-green)](https://huggingface.co/papers/2502.20272)
-[![zhihu](https://img.shields.io/badge/zhihu-知乎-179bd3)](https://zhuanlan.zhihu.com/p/27130836644)
-
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/you-only-need-one-color-space-an-efficient/low-light-image-enhancement-on-lime)](https://paperswithcode.com/sota/low-light-image-enhancement-on-lime?p=you-only-need-one-color-space-an-efficient)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/you-only-need-one-color-space-an-efficient/low-light-image-enhancement-on-lol)](https://paperswithcode.com/sota/low-light-image-enhancement-on-lol?p=you-only-need-one-color-space-an-efficient)
-
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/you-only-need-one-color-space-an-efficient/low-light-image-enhancement-on-lol-v2)](https://paperswithcode.com/sota/low-light-image-enhancement-on-lol-v2?p=you-only-need-one-color-space-an-efficient)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/you-only-need-one-color-space-an-efficient/low-light-image-enhancement-on-lol-v2-1)](https://paperswithcode.com/sota/low-light-image-enhancement-on-lol-v2-1?p=you-only-need-one-color-space-an-efficient)
-
-
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/you-only-need-one-color-space-an-efficient/low-light-image-enhancement-on-lolv2-1)](https://paperswithcode.com/sota/low-light-image-enhancement-on-lolv2-1?p=you-only-need-one-color-space-an-efficient)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/you-only-need-one-color-space-an-efficient/low-light-image-enhancement-on-npe)](https://paperswithcode.com/sota/low-light-image-enhancement-on-npe?p=you-only-need-one-color-space-an-efficient)
-
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/you-only-need-one-color-space-an-efficient/image-enhancement-on-sice-grad)](https://paperswithcode.com/sota/image-enhancement-on-sice-grad?p=you-only-need-one-color-space-an-efficient)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/you-only-need-one-color-space-an-efficient/image-enhancement-on-sice-mix)](https://paperswithcode.com/sota/image-enhancement-on-sice-mix?p=you-only-need-one-color-space-an-efficient)
-
-
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/you-only-need-one-color-space-an-efficient/low-light-image-enhancement-on-sony-total)](https://paperswithcode.com/sota/low-light-image-enhancement-on-sony-total?p=you-only-need-one-color-space-an-efficient)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/you-only-need-one-color-space-an-efficient/low-light-image-enhancement-on-vv)](https://paperswithcode.com/sota/low-light-image-enhancement-on-vv?p=you-only-need-one-color-space-an-efficient)
-
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/you-only-need-one-color-space-an-efficient/low-light-image-deblurring-and-enhancement-on)](https://paperswithcode.com/sota/low-light-image-deblurring-and-enhancement-on?p=you-only-need-one-color-space-an-efficient)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/you-only-need-one-color-space-an-efficient/low-light-image-enhancement-on-mef)](https://paperswithcode.com/sota/low-light-image-enhancement-on-mef?p=you-only-need-one-color-space-an-efficient)
-
-
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/you-only-need-one-color-space-an-efficient/low-light-image-enhancement-on-dicm)](https://paperswithcode.com/sota/low-light-image-enhancement-on-dicm?p=you-only-need-one-color-space-an-efficient)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/you-only-need-one-color-space-an-efficient/low-light-image-enhancement-on-lolv2)](https://paperswithcode.com/sota/low-light-image-enhancement-on-lolv2?p=you-only-need-one-color-space-an-efficient)
-
-</div>
-
-&nbsp;
-
-<details open>
-<summary><b>HVI-CIDNet Demo:</b></summary>
-
 ![results3](./pic/ui.png)
 
 </details>

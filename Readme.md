@@ -306,7 +306,7 @@ Then, put them in the following folder:
 ## 2. Testing 🌒
 
 
-Download our weights from [[Baidu Pan](https://drive.google.com/drive/folders/1bHNXq-3nSxh0QeyeG4dqcxtXw-Y-JbUY?usp=drive_link)]
+Download our weights from [[Google Drive](https://drive.google.com/drive/folders/1bHNXq-3nSxh0QeyeG4dqcxtXw-Y-JbUY?usp=drive_link)]
 
 - **You can test our HVI-CIDNet+ as followed, all the results will saved in `./output` folder:**
 
@@ -314,39 +314,24 @@ Download our weights from [[Baidu Pan](https://drive.google.com/drive/folders/1b
 
 ```bash
 # LOLv1
-python eval.py --lol --perc # weights that trained with perceptual loss
-python eval.py --lol # weights that trained without perceptual loss
+python eval.py --lol
 
 # LOLv2-real
-python eval.py --lol_v2_real --best_GT_mean # you can choose best_GT_mean or best_PSNR or best_SSIM
+python eval.py --lol_v2_real
 
 # LOLv2-syn
-python eval.py --lol_v2_syn --perc # weights that trained with perceptual loss
-python eval.py --lol_v2_syn # weights that trained without perceptual loss
+python eval.py --lol_v2_syn
 
 # SICE
 python eval.py --SICE_grad # output SICE_grad
 python eval.py --SICE_mix # output SICE_mix
 
-# FiveK
-python eval.py --fivek # output FiveK follow Retinexformer
-
 # Sony-Total-Dark
-python eval_SID_blur --SID
-
-# LOL-Blur
-python eval_SID_blur --Blur
+python eval_SID.py --SID
 
 # five unpaired datasets DICM, LIME, MEF, NPE, VV. 
-# We note that: you can choose one weights in ./weights folder, and set the alpha float number (defualt=1.0) as illumination scale of the datasets.
-# gamma denotes the gamma function (curve), see line 59 of "eval.py"
 # You can change "--DICM" to the other unpaired datasets "LIME, MEF, NPE, VV".
-python eval.py --unpaired --DICM --unpaired_weights --alpha
-# e.g.
-python eval.py --unpaired --DICM --unpaired_weights ./weights/LOLv2_syn/w_perc.pth --alpha 0.9 --gamma 0.9
-
-# Custome Datasets: alpha and gamma are optional.
-python eval.py --unpaired --custome --custome_path ./your/costome/dataset/path --unpaired_weights ./weights/LOLv2_syn/w_perc.pth --alpha 0.9 --gamma 0.9
+python eval.py --unpaired --DICM
 ```
 
 </details>
@@ -367,10 +352,7 @@ python measure.py --lol_v2_real
 python measure.py --lol_v2_syn
 
 # Sony-Total-Dark
-python measure_SID_blur.py --SID
-
-# LOL-Blur
-python measure_SID_blur.py --Blur
+python measure_SID.py --SID
 
 # SICE-Grad
 python measure.py --SICE_grad
@@ -378,14 +360,9 @@ python measure.py --SICE_grad
 # SICE-Mix
 python measure.py --SICE_mix
 
-# fivek
-python measure.py --fivek
-
-
 # five unpaired datasets DICM, LIME, MEF, NPE, VV. 
 # You can change "--DICM" to the other unpaired datasets "LIME, MEF, NPE, VV".
 python measure_niqe_bris.py --DICM
-
 
 # Note: Following LLFlow, KinD, and Retinxformer, we have also adjusted the brightness of the output image produced by the network, based on the average value of GroundTruth (GT). This only works in paired datasets. If you want to measure it, please add "--use_GT_mean".
 # 

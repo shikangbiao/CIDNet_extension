@@ -74,13 +74,6 @@ Previous Version: [You Only Need One Color Space: An Efficient Network for Low-l
 
 
 </details>
-<details close>
-<summary><b>LOL-Blur:</b></summary>
-
-![results2](./pic/blur.png)
-
-
-</details>
 
 ## 1. Get Started 🌑
 

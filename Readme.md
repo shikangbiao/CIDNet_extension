@@ -167,41 +167,28 @@ The weights with the "strongest" generalization ability we put on the HVI-CIDNet
 
 ### Dependencies and Installation
 
-- Python 3.7.0
-- Pytorch 1.13.1
-
-(1) Create Conda Environment
+(1) Clone Repo
 
 ```bash
-conda create --name CIDNet python=3.7.0
-conda activate CIDNet
+git clone git@github.com:shikangbiao/CIDNet_extension.git
 ```
 
-(2) Clone Repo
+(2) Install Dependencies
 
 ```bash
-git clone git@github.com:Fediory/HVI-CIDNet.git
-```
-
-(3) Install Dependencies
-
-```bash
-cd HVI-CIDNet
-pip install -r requirements.txt
+conda env create -f quadprior.yaml
 ```
 
 
 ### Data Preparation
 
-You can refer to the following links to download the datasets. Note that we only use `low_blur` and `high_sharp_scaled` subsets of `LOL-Blur` dataset.
+You can refer to the following links to download the datasets.
 
 - [LOLv1](https://daooshee.github.io/BMVC2018website/)
 - LOLv2: [Baidu Pan](https://pan.baidu.com/s/17KTa-6GUUW22Q49D5DhhWw?pwd=yixu) (code: `yixu`) and  [One Drive](https://1drv.ms/u/c/2985db836826d183/EYPRJmiD24UggCmCAQAAAAABEbg62rx0FG21FwLQq0jzLg?e=Im12UA) (code: `yixu`) 
-- LOL-Blur: [Baidu Pan](https://pan.baidu.com/s/1nj054uoLA3gtpV7MNM2eCA?pwd=yixu)(code: `yixu`) and [One Drive](https://1drv.ms/u/s!AoPRJmiD24UphBTn9PsLC5hoD-k9?e=Jm0AOa) (code: `yixu`) 
 - DICM,LIME,MEF,NPE,VV: [Baidu Pan](https://pan.baidu.com/s/1FZ5HWT30eghGuaAqqpJGaw?pwd=yixu)(code: `yixu`) and [One Drive](https://1drv.ms/f/s!AoPRJmiD24UphBNGBbsDmSwppNPf?e=2yGImv)(code: `yixu`)
 - SICE: [Baidu Pan](https://pan.baidu.com/s/13ghnpTBfDli3mAzE3vnwHg?pwd=yixu)(code: `yixu`) and [One Drive](https://1drv.ms/u/s!AoPRJmiD24UphAlaTIekdMLwLZnA?e=WxrfOa)(code: `yixu`)
 - Sony-Total-Dark(SID): [Baidu Pan](https://pan.baidu.com/s/1mpbwVscbAfQJtkrrzBzJng?pwd=yixu)(code: `yixu`) and [One Drive](https://1drv.ms/u/s!AoPRJmiD24UphAie9l0DuMN20PB7?e=Zc5DcA)(code: `yixu`)
-- FiveK (follow [Retinexformer](https://github.com/caiyuanhao1998/Retinexformer)): [Baidu Disk](https://pan.baidu.com/s/1ajax7N9JmttTwY84-8URxA?pwd=cyh2) (code:`cyh2`), [Google Drive](https://drive.google.com/file/d/11HEUmchFXyepI4v3dhjnDnmhW_DgwfRR/view?usp=sharing)
 
 Then, put them in the following folder:
 
@@ -210,13 +197,6 @@ Then, put them in the following folder:
 ```
 ├── datasets
 	├── DICM
-	├── FiveK
-		├── test
-			├──input
-			├──target
-		├── train
-			├──input
-			├──target
 	├── LIME
 	├── LOLdataset
 		├── our485
@@ -240,28 +220,6 @@ Then, put them in the following folder:
 			├── Test
 				├── Low
 				├── Normal
-	├── LOL_blur
-		├── eval
-			├── high_sharp_scaled
-			├── low_blur
-		├── test
-			├── high_sharp_scaled
-				├── 0012
-				├── 0017
-				...
-			├── low_blur
-				├── 0012
-				├── 0017
-				...
-		├── train
-			├── high_sharp_scaled
-				├── 0000
-				├── 0001
-				...
-			├── low_blur
-				├── 0000
-				├── 0001
-				...
 	├── MEF
 	├── NPE
 	├── SICE
@@ -373,7 +331,7 @@ python measure.py --lol --use_GT_mean
 
 </details>
 
-- **Evaluating the Parameters, FLOPs, and running time of HVI-CIDNet:**
+- **Evaluating the Parameters, FLOPs, and running time of HVI-CIDNet+:**
 
 ```bash
 python net_test.py

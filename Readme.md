@@ -35,17 +35,10 @@ Previous Version: [You Only Need One Color Space: An Efficient Network for Low-l
 
 
 
-## Proposed HVI-CIDNet ⚙ 
-
-<details open>
-<summary><b>Motivation:</b></summary>
-
-![results3](./pic/motivation.png)
-
-</details>
+## Proposed HVI-CIDNet+ ⚙ 
 
 <details close>
-<summary><b>HVI-CIDNet pipeline:</b></summary>
+<summary><b>HVI-CIDNet+ pipeline:</b></summary>
 
 ![results3](./pic/pipeline.png)
 

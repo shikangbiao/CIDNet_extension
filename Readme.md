@@ -2,13 +2,7 @@
 
 <p align="center"> <img src="pic/logo.png" width="500px"> </p>
 
-# [CVPR2025] HVI: A New Color Space for Low-light Image Enhancement
-
-**[Qingsen Yan](https://scholar.google.com/citations?user=BSGy3foAAAAJ)<sup>∗ </sup>, [Yixu Feng](https://scholar.google.com/citations?user=WljJ2HUAAAAJ)<sup>∗ </sup>, [Cheng Zhang](https://scholar.google.com/citations?user=L_Av9NcAAAAJ)**,  [Guansong Pang](https://scholar.google.com/citations?user=1ZO7pHkAAAAJ), Kangbiao Shi, [Peng Wu](https://scholar.google.com/citations?user=QkNqUH4AAAAJ), Wei Dong, Jinqiu Sun,  [Yanning Zhang](https://scholar.google.com/citations?user=-wzlS7QAAAAJ)
-
-Previous Version: [You Only Need One Color Space: An Efficient Network for Low-light Image Enhancement](https://arxiv.org/abs/2402.05809)
-
-![results3](./pic/ui.png)
+**[Qingsen Yan](https://scholar.google.com/citations?user=BSGy3foAAAAJ), [Kangbiao Shi](https://scholar.google.com/citations?user=kuFTtyQAAAAJ&hl=en), [Yixu Feng](https://scholar.google.com/citations?user=WljJ2HUAAAAJ), [Tao Hu](https://scholar.google.com/citations?user=BNkFUbsAAAAJ&hl=en&oi=sra), [Peng Wu](https://scholar.google.com/citations?user=QkNqUH4AAAAJ),  [Guansong Pang](https://scholar.google.com/citations?user=1ZO7pHkAAAAJ&hl=en), [Yanning Zhang](https://scholar.google.com/citations?user=-wzlS7QAAAAJ)
 
 </details>
 

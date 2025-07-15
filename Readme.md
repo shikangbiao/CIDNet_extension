@@ -51,14 +51,6 @@ Previous Version: [You Only Need One Color Space: An Efficient Network for Low-l
 
 </details>
 
-<details close>
-<summary><b>Lighten Cross-Attention (LCA) Block structure:</b></summary>
-
-![results4](./pic/structure.png)
-
-
-</details>
-
 ## Visual Comparison 🖼 
 <details close>
 <summary><b>LOL-v1, LOL-v2-real, and LOL-v2-synthetic:</b></summary>

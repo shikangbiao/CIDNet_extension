@@ -306,43 +306,9 @@ Then, put them in the following folder:
 ## 2. Testing 🌒
 
 
-Download our weights from [[Baidu Pan](https://pan.baidu.com/s/1rvQcQPwsYbtLIYwB3XgjaA?pwd=yixu)] (code: `yixu`) and put them in folder `weights`:
+Download our weights from [[Baidu Pan](https://drive.google.com/drive/folders/1bHNXq-3nSxh0QeyeG4dqcxtXw-Y-JbUY?usp=drive_link)]
 
-<details close> <summary>weights (click to expand)</summary>
-
-```
-├── weights
-    ├── LOLv1
-        ├── w_perc.pth
-        ├── wo_perc.pth
-        ├── test_finetuning.pth
-    ├── LOLv2_real
-        ├── best_PSNR.pth
-        ├── best_SSIM.pth
-        ├── w_perc.pth
-    ├── LOLv2_syn
-        ├── generalization.pth
-        ├── w_perc.pth
-        ├── wo_perc.pth
-    ├── LOL-Blur.pth
-    ├── SICE.pth
-    ├── SID.pth
-```
-
-</details>
-
-- **You can test our method in our gradio demo with bash code `python app.py`, and go to the URL link "http://127.0.0.1:7862" to enjoy the demo.** (add `--cpu` can inference CPU-only)
-- or You can use `huggingface_hub` to download and test our method as:
-```bash
-# you can find all weights in https://huggingface.co/papers/2502.20272
-python eval_hf.py --path fediory/our_model_path --input_img your/img/path --alpha_s 1.0 --alpha_i 1.0 --gamma 1.0
-
-# for example
-python eval_hf.py --path fediory/HVI-CIDNet-LOLv1-wperc --input_img ./datasets/DICM/01.JPG --alpha_s 1.0 --alpha_i 1.0 --gamma 1.0
-```
-and your enhanced image will be saved at `./output_hf`.
-
-- or **You can test our method as followed, all the results will saved in `./output` folder:**
+- **You can test our HVI-CIDNet+ as followed, all the results will saved in `./output` folder:**
 
 <details close> <summary>(click to expand)</summary>
 
@@ -439,23 +405,13 @@ python net_test.py
 
 ## 3. Training 🌓
 
-- We put all the configurations that need to be adjusted in the `./data/options.py` folder and explained them in the file. We apologize that some of the training parameters we are no longer able to provide and share with you, but we guarantee that all the weights are trainable by parameter tuning. You can train our HVI-CIDNet by:
-
-```bash
-python train.py
-```
-
-- All weights are saved to the `./weights/train` folder and are saved in steps of the checkpoint set in the `options.py`  as `epoch_*.pth` where `*` represent the epoch number.
-- Also, for every weight saved, metrics are measured for the validation set and printed to the command line. Finally, the results of all weights' test metrics on the validation set and options in `./data/options.py` will be saved to `./results/training/metrics-YYYY-mm-dd-HHMMSS.md`.
-- In each epoch, we save an output (test) and GT image to the `./results/training` folder to facilitate the visualization of the training results and progress of each epoch, as well as to detect the generation of gradient explosion in advance.
-- After each checkpoint, we save all the validation set outputs for this time in the `./results` folder to the corresponding folder. Note that we use a replacement strategy for different checkpoints for each dataset. That is, we do not save the plots of all checkpoints, but only the weights of each checkpoint.
-  
+The training code will be uploaded soon.
 
 ## 4. Contacts 🌔
 
 If you have any questions, please contact us or submit an issue to the repository!
 
-Yixu Feng (yixu-nwpu@mail.nwpu.edu.cn)
+Kangbiao Shi (18334840904@163.com)
 
 ## 5. Citation 🌕
 
@@ -463,19 +419,17 @@ If you find our work useful for your research, please cite our paper
 
 ```
 @article{yan2025hvi,
-  title={HVI: A New color space for Low-light Image Enhancement},
-  author={Yan, Qingsen and Feng, Yixu and Zhang, Cheng and Pang, Guansong and Shi, Kangbiao and Wu, Peng and Dong, Wei and Sun, Jinqiu and Zhang, Yanning},
-  journal={arXiv preprint arXiv:2502.20272},
+  title={HVI-CIDNet+: Beyond Extreme Darkness for Low-Light Image Enhancement},
+  author={Yan, Qingsen and Shi, Kangbiao and Feng, Yixu and Hu, Tao and Wu, Peng and Pang, Guansong and Zhang, Yanning},
+  journal={arXiv preprint arXiv:2507.06814},
   year={2025}
 }
 
-@misc{feng2024hvi,
-      title={You Only Need One Color Space: An Efficient Network for Low-light Image Enhancement}, 
-      author={Yixu Feng and Cheng Zhang and Pei Wang and Peng Wu and Qingsen Yan and Yanning Zhang},
-      year={2024},
-      eprint={2402.05809},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@inproceedings{yan2025hvi,
+  title={Hvi: A new color space for low-light image enhancement},
+  author={Yan, Qingsen and Feng, Yixu and Zhang, Cheng and Pang, Guansong and Shi, Kangbiao and Wu, Peng and Dong, Wei and Sun, Jinqiu and Zhang, Yanning},
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={5678--5687},
+  year={2025}
 }
 ```
-

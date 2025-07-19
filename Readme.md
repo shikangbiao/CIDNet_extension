@@ -4,7 +4,7 @@
 
 # HVI-CIDNet+: Beyond Extreme Darkness for Low-Light Image Enhancement
 
-[Qingsen Yan](https://scholar.google.com/citations?user=BSGy3foAAAAJ), [Kangbiao Shi](https://scholar.google.com/citations?user=kuFTtyQAAAAJ&hl=en), [Yixu Feng](https://scholar.google.com/citations?user=WljJ2HUAAAAJ), [Tao Hu](https://scholar.google.com/citations?user=BNkFUbsAAAAJ&hl=en&oi=sra), [Peng Wu](https://scholar.google.com/citations?user=QkNqUH4AAAAJ),  [Guansong Pang](https://scholar.google.com/citations?user=1ZO7pHkAAAAJ&hl=en), [Yanning Zhang](https://scholar.google.com/citations?user=-wzlS7QAAAAJ)
+[Qingsen Yan](https://scholar.google.com/citations?user=BSGy3foAAAAJ), Kangbiao Shi, [Yixu Feng](https://scholar.google.com/citations?user=WljJ2HUAAAAJ), [Tao Hu](https://scholar.google.com/citations?user=BNkFUbsAAAAJ&hl=en&oi=sra), [Peng Wu](https://scholar.google.com/citations?user=QkNqUH4AAAAJ),  [Guansong Pang](https://scholar.google.com/citations?user=1ZO7pHkAAAAJ&hl=en), [Yanning Zhang](https://scholar.google.com/citations?user=-wzlS7QAAAAJ)
 
 </details>
 
